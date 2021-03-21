@@ -3,7 +3,6 @@ import { View } from 'native-base'
 import { StyleSheet, FlatList,ImageSourcePropType } from 'react-native'
 import { AlbumLink } from '../molecules/AlbumLink'
 import { PhotoWithSelect } from '../molecules/PhotoWithSelect'
-
 interface props {
     item: {
         title: string

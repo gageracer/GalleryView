@@ -1,7 +1,6 @@
 import React from 'react'
 import { Text } from 'native-base'
 import { StyleSheet, TextStyle } from 'react-native'
-
 interface props {
     data: string
 } 

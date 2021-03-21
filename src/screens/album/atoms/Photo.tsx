@@ -1,6 +1,5 @@
 import React from 'react'
 import { StyleSheet, Image, ImageStyle, ImageSourcePropType } from 'react-native'
-
 interface props {
     data: ImageSourcePropType
 } 

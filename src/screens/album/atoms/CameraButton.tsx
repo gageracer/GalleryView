@@ -2,9 +2,7 @@ import React from 'react'
 import { View } from 'native-base'
 import { StyleSheet } from 'react-native'
 import { useHistory } from "react-router-dom"
-
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-
 
 export const CameraButton: React.FC = () => {
     const history = useHistory()

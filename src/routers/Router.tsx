@@ -13,7 +13,6 @@ export const Router = () => {
                 <Route exact path="/" component={Demo}/>
                 <Route exact path="/album" component={Album}/>
                 <Route exact path="/camera" component={OpenCamera} />
-
             </BackButton>
         </NativeRouter>
         )

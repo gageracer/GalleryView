@@ -2,8 +2,6 @@ import React from 'react'
 import { Photo } from '../atoms/Photo'
 import { StyleSheet, ViewStyle, ImageSourcePropType } from 'react-native'
 import { CheckBox, View } from 'native-base'
-
-
 interface props {
     data: ImageSourcePropType
 }

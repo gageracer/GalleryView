@@ -6,6 +6,7 @@ import { CameraPreview } from './CameraPreview'
 
 // insipred from here:
 // https://docs.expo.io/versions/latest/sdk/camera/
+
 export const OpenCamera: React.FC = () => {
     const [hasPermission, setHasPermission] = useState<boolean>(false);
     const [type, setType] = useState(Camera.Constants.Type.back);
@@ -21,7 +22,8 @@ export const OpenCamera: React.FC = () => {
         })()
     }, [])
 
-    // Takes a photo
+    // Takes a photo and previews it
+    // Does not have return back button added on IOS
     const takePicture = async() =>{
         if(!camera) return
         const photo = await camera.takePictureAsync()
