@@ -27,7 +27,23 @@
     "@types/react-native": "~0.63.2",
     "@types/react-router-dom": "^5.1.7",
     "@types/react-router-native": "^5.1.0",
+    "jest-expo": "^40.0.2",
+    "react-test-renderer": "^17.0.2",
     "typescript": "~4.0.0"
   },
-  "private": true
+  "private": true,
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|@react-native-picker|@codler|react-native-keyboard-aware-scroll-view|react-router|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
+    ],
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "**/*.{ts,tsx}",
+      "!**/coverage/**",
+      "!**/node_modules/**",
+      "!**/babel.config.js",
+      "!**/jest.setup.js"
+    ]
+  }
 }
